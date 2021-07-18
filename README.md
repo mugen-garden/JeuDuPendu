@@ -2,14 +2,40 @@
 
 "Le Pendu est un jeu consistant à trouver un mot en divinant quelles sont les lettres qui le composent." [source](https://fr.wikipedia.org/wiki/Le_Pendu_(jeu))
 
+## Installer et lancer le projet
+
+- Installer NodeJS & NPM (inclus) [Source](https://nodejs.org/en/download/)
+
+- Se positionner avec son terminal à la racine du projet.
+
+- Installer les dépendances
+
+```bash
+npm install
+```
+
+- Lancer le projet en mode développement (hot reload)
+```bash
+npm run dev
+```
+
+- Lancer le projet
+```bash
+npm start
+```
+
 ## Etats
 
 On peut avoir 8 états durant le jeu.
 
 [1] - Potence qui ne pend rien. C'est le début du jeu.
+
 [2] - Première fausse lettre : on pends la tête.
+
 [3] - Deuxieme fausse lettre, on pends le buste.
+
 [4][5][6][7] - Les erreurs suivants, une partie du corps à chaque fois.
+
 [8] - Erreur fatale : la mort ! Fin du jeu.
 
 On peut arrêter le jeu avant le 8eme état si l'on trouve toute les lettres.
@@ -24,4 +50,4 @@ Deux implémentations sont possibles :
 
 - Interactif : On fait une connection en websocket pour faire jouer 2 joueurs.
 
-On va faire en IA. Plus simplez pour le début.
+On va faire en IA. Plus simple pour le début.
