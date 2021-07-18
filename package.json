@@ -1,0 +1,20 @@
+{
+	"name": "pendu",
+	"version": "1.0.0",
+	"description": "Une implémentation du jeu du pendu pour MUGEN",
+	"main": "app.js",
+	"scripts": {
+		"start": "node app.js",
+		"dev": "nodemon app.js"
+	},
+	"author": "othomation",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/express": "^4.17.13",
+		"nodemon": "^2.0.12"
+	},
+	"dependencies": {
+		"ejs": "^3.1.6",
+		"express": "^4.17.1"
+	}
+}

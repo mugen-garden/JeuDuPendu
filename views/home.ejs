@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('partials/_head', {entryFile: config.entryFile}) %>
+	</head>
+	<body>
+		<button id="reset" hidden>Reset</button>
+
+		<div id="wordToFind"></div>
+
+		<button id="start">Start game</button>
+
+		<form id="formLetter" hidden>
+			<p>Etat (1 [début] à 8 [mort]) :<span id="state"></span></p>
+			<input type="text" name="letter" id="letter" />
+			<input type="submit" value="Try letter" />
+		</form>
+
+		<section id="results"></section>
+	</body>
+</html>
